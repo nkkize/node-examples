@@ -16,34 +16,7 @@ function solveRect(l, b) {
     console.log("this statement is after call to rect")
 }
 
-function agetProtobufTimestamp(date) {
-    console.log("Date "+date)
-    let millis = date.getTime();
-    let orderDate = moment(millis).format("MMMM Do, YYYY");
-    console.log("IST date: "+orderDate);
-    let pstOrderDate = moment(millis).tz('America/Los_Angeles').format("MMMM Do, YYYY");
-    console.log("PST date: "+pstOrderDate);
-    let remainingMilliseconds = millis % 1000;
-    let seconds = (millis - remainingMilliseconds) / 1000;
-    let nanos = remainingMilliseconds * 1000000;
-    console.log("seconds :" + seconds);
-    console.log("nanos :" + nanos);
-};
-
-function getDatefromProtobuftimestamp(seconds, nanos){
-    let millis = seconds * 1000 + Math.floor(nanos % 1000000);
-    console.log("Date :" + new Date(millis));
-}
-
-getDatefromProtobuftimestamp(1521163893,231000000);
-
-
-//solveRect(2, 4);
-//solveRect(3, 5);
-//solveRect(5, 0);
-
-agetProtobufTimestamp(new Date());
-
+solveRect(5, 0);
 
 var config = require('tiny-config');
 
@@ -66,10 +39,3 @@ var all = config.getAll();
 //Will return the map which has effective config settings
 
 console.log(all);
-
-
-var
-
-var resp = JSON.parse(response);
-
-console.log(resp);
