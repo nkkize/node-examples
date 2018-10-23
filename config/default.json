@@ -1,0 +1,9 @@
+{
+  "connectionString": "local_connection_string",
+  "serviceConfig": {
+    "retryConfig": {
+      "maxAttempts": 3
+    }
+  },
+  "logLevel": "debug"
+}
