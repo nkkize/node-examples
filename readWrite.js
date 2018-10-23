@@ -1,4 +1,4 @@
-var fs = require('fs');
+const fs = require('fs');
 
 function readFile(srcPath) {
     return new Promise(function (resolve, reject) {
